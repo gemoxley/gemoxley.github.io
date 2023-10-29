@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+    body{
+    background-color:#F6DFBF;
+    color: #2F2926;
+    background-image: url(../img/Assorted_Assets/background_stars.png);
+    background-repeat: repeat;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    }
+
+    grid{
+        display: grid;
+        grid-template-columns: 16;
+        grid-template-rows: 1;
+        grid-gap: 16px;
+    }
