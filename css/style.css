@@ -11,9 +11,42 @@
     margin: auto;
     }
 
+    p{
+        background-color: #F6DFBF;
+        color: #2F2926;
+        font-family: 'Arvo', script;
+    }
+    h1{
+        background-color: #F6DFBF;
+        color: #2F2926;
+        font-family: 'Caveat', script;
+    }
+    h3{
+        background-color: #F6DFBF;
+        color: #2F2926;
+        font-family: 'Caveat', script;
+    }
+
     grid{
         display: grid;
         grid-template-columns: 16;
         grid-template-rows: 1;
         grid-gap: 16px;
     }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        order: 7;
+        grid-column: 8 / 15;
+        grid-row: 1 / 1;
+      }
+
+    flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
