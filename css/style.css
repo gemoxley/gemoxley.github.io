@@ -14,16 +14,19 @@
     p{
         background-color: #F6DFBF;
         color: #2F2926;
+        font-size: 24px;
         font-family: 'Arvo', slab-serif;
     }
     h1{
         background-color: #F6DFBF;
         color: #2F2926;
+        font-size: 48px;
         font-family: 'Caveat', handwriting;
     }
     h3{
         background-color: #F6DFBF;
         color: #2F2926;
+        font-size: 24px;
         font-family: 'Caveat', handwriting;
     }
 
@@ -37,43 +40,32 @@
         grid-row: 1 / 1;
       }
 
-      /*
-
-      <-- None of this code works and I have no idea why not. It just creates a pillar of items.-->
-
-      CAA-grid-container {
+      .container{
         display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 50px;
-        padding: 50px;
-      }
-
-      CAA-grid-item{
+        gap: 30px;
+        padding: 1rem;
+        justify-items: end;
+        place-items: center;
         background-color: #F6DFBF;
-        border: 500px solid #DE142E;
-        padding: 50px;
-        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: auto; 
       }
 
+      .container > div{
+        background-color: #F6DFBF;
+        padding: 1rem;
+        border: 5px #DE142E;
+        border-style: double;
+        place-items: center;
+      }
 
-
-      */
-
-
-
-
-
-
-    grid{
-        display: grid;
-        grid-template-columns: 16;
-        grid-template-rows: 1;
-        grid-gap: 16px;
+    .banner{
+      display: flex; 
+      padding: 1rem;
+      gap: 30px;
+      flex-direction: row;
+      justify-content: space-around;
     }
 
-    flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+   
