@@ -14,24 +14,17 @@
     p{
         background-color: #F6DFBF;
         color: #2F2926;
-        font-family: 'Arvo', script;
+        font-family: 'Arvo', slab-serif;
     }
     h1{
         background-color: #F6DFBF;
         color: #2F2926;
-        font-family: 'Caveat', script;
+        font-family: 'Caveat', handwriting;
     }
     h3{
         background-color: #F6DFBF;
         color: #2F2926;
-        font-family: 'Caveat', script;
-    }
-
-    grid{
-        display: grid;
-        grid-template-columns: 16;
-        grid-template-rows: 1;
-        grid-gap: 16px;
+        font-family: 'Caveat', handwriting;
     }
 
     header{
@@ -44,9 +37,43 @@
         grid-row: 1 / 1;
       }
 
+      /*
+
+      <-- None of this code works and I have no idea why not. It just creates a pillar of items.-->
+
+      CAA-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        padding: 50px;
+      }
+
+      CAA-grid-item{
+        background-color: #F6DFBF;
+        border: 500px solid #DE142E;
+        padding: 50px;
+        text-align: center;
+      }
+
+
+
+      */
+
+
+
+
+
+
+    grid{
+        display: grid;
+        grid-template-columns: 16;
+        grid-template-rows: 1;
+        grid-gap: 16px;
+    }
+
     flex{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-      }
+    }
