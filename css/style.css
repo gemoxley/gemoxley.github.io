@@ -16,6 +16,7 @@
         color: #2F2926;
         font-size: 24px;
         font-family: 'Arvo', slab-serif;
+        padding: 1em;
     }
     h1{
         background-color: #F6DFBF;
@@ -40,7 +41,70 @@
         grid-row: 1 / 1;
       }
 
-      .container{
+      .banner{
+        display: flex;
+        padding: 1rem;
+        gap: 30px;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .about_container{
+        display: grid;
+        gap: 30px;
+        place-items: center;
+        padding: 1rem;
+        background-color: #F6DFBF;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 3fr);
+        margin: auto; 
+      }
+      .about_container > div{
+        background-color: #F6DFBF;
+        padding: 1rem;
+        place-items: center;
+      }
+
+      .index_container{
+        display: grid;
+        gap: 30px;
+        padding: 1rem;
+        justify-items: end;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: auto; 
+      }
+      .index_container > div{
+        background-color: #F6DFBF;
+        padding: 1rem;
+        place-items: center;
+      }
+
+      .design_container{
+        display: grid;
+        gap: 30px;
+        padding: 1rem;
+        justify-items: end;
+        place-items: center;
+        background-color: #F6DFBF;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto; 
+      }
+      .design_container > div{
+        background-color:#F6DFBF;
+        padding: 1rem;
+        border: 5px #7B8400;
+        border-style: solid;
+        place-items: center;
+      }
+      .paint_poster {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+
+      .CAA_container{
         display: grid;
         gap: 30px;
         padding: 1rem;
@@ -51,21 +115,12 @@
         grid-template-rows: repeat(3, 1fr);
         margin: auto; 
       }
-
-      .container > div{
+      .CAA_container > div{
         background-color: #F6DFBF;
         padding: 1rem;
         border: 5px #DE142E;
         border-style: double;
         place-items: center;
       }
-
-    .banner{
-      display: flex; 
-      padding: 1rem;
-      gap: 30px;
-      flex-direction: row;
-      justify-content: space-around;
-    }
 
    
